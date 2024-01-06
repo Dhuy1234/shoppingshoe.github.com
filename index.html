@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Online Bitis Shoping page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-menu">
+        <img src="imge/tải_xuống__1_-removebg-preview.png" />
+        <div class="page">
+          <a href="#">Sản phẩm </a>
+          <a href="#">Sale </a>
+          <a href="#">Thư viện </a>
+          <a href="#">Giới thiệu </a>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping" onclick="openCartModal()"></i>
+          <a href="login.html">
+            <i class="fa-solid fa-user" id="users"></i>
+          </a>
+          <div class="lines"></div>
+          <i class="fa-solid fa-globe"></i>
+        </div>
+      </div>
+    </div>
+
+    <div id="cartModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeCartModal()">&times;</span>
+        <p>Giỏ hàng:</p>
+        <ul id="cartItems"></ul>
+        <button class="thanhToan" onclick="thanhToan()">
+          Thanh Toan don hang
+        </button>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="selector" id="categories">
+        <div class="cateStyle highlight">HOME</div>
+        <div class="cateStyle">SHOE/2023</div>
+      </div>
+
+      <div id="products" class="product"></div>
+    </div>
+
+    <div class="formCustomer">
+      <div class="form1">Tư vấn khách hàng</div>
+      <div class="form2">
+        Để chúng tôi chuyên viên tư vấn hướng dẫn khách hàng
+      </div>
+      <div class="inputUser">
+        <input
+          class="namer"
+          type="name"
+          name="name"
+          type="text"
+          placeholder="Họ và tên của bạn"
+        />
+        <input
+          onclick=""
+          class="namer"
+          type="phonenumber"
+          name="phonenumber"
+          placeholder="Số điện thoại của bạn"
+        />
+        <input class="buttonSubmit" id="submitButton" type="submit" name="submit" value="Tư vấn ngay" onclick="submitInfo()" />
+        
+
+      </div>
+    </div>
+
+    <div id="contact" class="flex center padding-32-font-size-15">
+      <div class="logoBrand">
+        <img src="imge/tải_xuống__1_-removebg-preview.png" width="25%" />
+        <h2 class="wide">HỆ THỐNG CỬA HÀNG</h2>
+      </div>
+      <div class="system">
+        Địa chỉ:...<br />
+        Hotline: +84 862265140<br />
+        Service: mail@mail.com<br />
+      </div>
+    </div>
+    <p class="bgFooter w3-center w3-padding">ĐƯỢC LÀM BỞI: ĐINH HUY</p>
+
+    <script src="app.js"></script>
+  </body>
+</html>
